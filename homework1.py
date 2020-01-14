@@ -30,9 +30,27 @@
 
 
 
-#Guess a Number V2
+# #Guess a Number V2
+# print("I am thinking of a number bewteen 1 and 10")
+# setnumber = 5
+# gn = 0
+# while gn != setnumber:
+#     gn = int(input("What's the number?"))
+#     if gn > setnumber:
+#         print(gn, " is too hight")
+#     if gn < setnumber:
+#         print(gn, " is too low")
+
+# print("Yes! You win!")
+
+
+#Guess a number v3
+
+import random
+my_random_number = random.randint(1, 10)
+
 print("I am thinking of a number bewteen 1 and 10")
-setnumber = 5
+setnumber = my_random_number
 gn = 0
 while gn != setnumber:
     gn = int(input("What's the number?"))
