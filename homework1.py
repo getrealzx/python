@@ -32,9 +32,13 @@
 
 #Guess a Number V2
 print("I am thinking of a number bewteen 1 and 10")
-
+setnumber = 5
 gn = 0
-while gn != 5:
+while gn != setnumber:
     gn = int(input("What's the number?"))
+    if gn > setnumber:
+        print(gn, " is too hight")
+    if gn < setnumber:
+        print(gn, " is too low")
 
 print("Yes! You win!")
