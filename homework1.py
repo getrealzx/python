@@ -2,12 +2,34 @@
 # #1. Tip Calculator
 
 
-# import math
+# bill = float(input("Total bill amount? "))
+# lvlsvs = input("Level of Service? ")
+# lvlsvs = lvlsvs.lower()
+# percenttips = 0.1
+
+# if lvlsvs == "good":
+#     percenttips = 0.2
+# elif lvlsvs == "fair":
+#     percenttips = 0.15
+# elif lvlsvs == "bad":
+#     percenttips = 0.1
+
+# tips = float("%.2f" %(percenttips * bill))
+# total = bill + tips
+
+# output = f"Tip amount is ${tips} \nTotal amount is ${total}"
+
+# print(output)
+##########################
+
+# #Tip Calculator 2
+
 
 # bill = float(input("Total bill amount? "))
 # lvlsvs = input("Level of Service? ")
 # lvlsvs = lvlsvs.lower()
-# print(lvlsvs)
+# n_ppl = int(input("Split how many ways? "
+# ))
 
 # percenttips = 0.1
 
@@ -18,49 +40,75 @@
 # elif lvlsvs == "bad":
 #     percenttips = 0.1
 
-
-
 # tips = float("%.2f" %(percenttips * bill))
 # total = bill + tips
+# amount_per_person = float("%.2f" %(total / n_ppl))
 
-# output = f"Tip amount is ${tips} \nTotal amount is ${total}"
+# output = f"Tip amount is ${tips} \nTotal amount is ${total} \n Amount per person: ${amount_per_person}"
 
 # print(output)
 ##########################
 
-#Tip Calculator 2
+# #3. How many coins?
+
+# answer = "yes"
+# numcoin = 0
+
+# while answer == "yes":
+#     output = f"You have {numcoin} coins"
+#     print(output)
+#     answer = input("Do you want another? ")
+#     answer = answer.lower()
+#     if answer == "yes" :
+#         numcoin += 1
+#     else:
+#         answer = "no"
+#         print("Bye")
+
+# #################################
 
 
-bill = float(input("Total bill amount? "))
-lvlsvs = input("Level of Service? ")
-lvlsvs = lvlsvs.lower()
-n_ppl = int(input("Split how many ways? "
-))
-print(lvlsvs)
+# # 4. Print a Box
+# width = int(input("Width? "))
+# height = int(input("Height? "))
+# w = 1
+# h = 1
 
-percenttips = 0.1
+# while h <= height:
+#     if h == 1 or h == height:
+#         print("*"*width)
+#     else:
+#         print("*" + " "*(width-2) + "*")
+#     h += 1
 
-if lvlsvs == "good":
-    percenttips = 0.2
-elif lvlsvs == "fair":
-    percenttips = 0.15
-elif lvlsvs == "bad":
-    percenttips = 0.1
+# ##########################################
 
+# #5. Print a Triangle
 
+# lvl = 1
+# fspacer = 4
 
-tips = float("%.2f" %(percenttips * bill))
-total = bill + tips
-amount_per_person = float("%.2f" %(total / n_ppl))
+# while fspacer >0:
+#     print(" "*fspacer + "*"*lvl)
+#     fspacer -= 1
+#     lvl += 2
+#############################################
 
-output = f"Tip amount is ${tips} \nTotal amount is ${total} \n Amount per person: ${amount_per_person}"
+# # 6.Multiplication Table
+# x = 1
+# y = 1
 
-print(output)
-##########################
+# while x <=10:
+#     while y <=10:
+#         product = x*y
+#         output = f'{x} X {y} = {product} '
+#         y += 1
+#         print(output)
+#     y = 1
+#     x += 1
+    
 
-
-
-
+# ############################################
 
 
 
