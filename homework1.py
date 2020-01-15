@@ -1,3 +1,48 @@
+##############
+#small
+#1. Hello
+# name = input("What is your name? ")
+
+# print("Hello, " + name)
+# #####################################################
+# #2. Hello YOU
+# name = input("What is your name? ")
+
+# print("Hello, " + name)
+# nlen = len(name)
+# output = f"YOUR NAME HAS {nlen} LETTER IN IT! AWESOME" 
+# print(output)
+
+# #######################################################
+
+# 3.Madlib
+# print("Please fill in the blanks below:/n____(name)____'s favorite subject in school is ____(subject)____.")
+# name = input("What is name? ")
+# subject = input (" What is subject? ")
+
+# output = f"{name}'s favorite subject in school is {subject}.'"
+# print(output)
+
+# #######################################################
+
+# 4. Day of the week
+day = int(input('Day (0-6)? '))
+if day == 0:
+    print("Monday")
+if day == 1:
+    print("Tuesday")
+if day == 2:
+    print("Wednseday")
+if day == 3:
+    print("Thursday")
+if day == 4:
+    print("Friday")
+if day == 6:
+    print("Saturday")
+if day == 7:
+    print("Sunday")
+
+# #######################################################
 
 # #1. Tip Calculator
 
@@ -179,31 +224,31 @@
 # print("Yes! You win!")
 ################################################
 
-#### Limited Guesses
-import random
-my_random_number = random.randint(1, 10)
+# #### Limited Guesses
+# import random
+# my_random_number = random.randint(1, 10)
 
-print("I am thinking of a number bewteen 1 and 10")
-setnumber = my_random_number
-gn = 0
-attemps = 5
+# print("I am thinking of a number bewteen 1 and 10")
+# setnumber = my_random_number
+# gn = 0
+# attemps = 5
     
 
-while gn != setnumber and attemps > 0:
-    print (" you have ", attemps," guesse(s) left")
-    gn = int(input("What's the number? "))
-    if gn > setnumber:
-        print(gn, " is too hight")
-    if gn < setnumber:
-        print(gn, " is too low")
+# while gn != setnumber and attemps > 0:
+#     print (" you have ", attemps," guesse(s) left")
+#     gn = int(input("What's the number? "))
+#     if gn > setnumber:
+#         print(gn, " is too hight")
+#     if gn < setnumber:
+#         print(gn, " is too low")
 
-    attemps -=1
+#     attemps -=1
 
 
-if attemps < 1:
-    print("You ran out of guesses!")
-else:  
-    print("Yes! You win!")
+# if attemps < 1:
+#     print("You ran out of guesses!")
+# else:  
+#     print("Yes! You win!")
 
 ####################################################
 
