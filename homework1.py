@@ -1,3 +1,71 @@
+
+# #1. Tip Calculator
+
+
+# import math
+
+# bill = float(input("Total bill amount? "))
+# lvlsvs = input("Level of Service? ")
+# lvlsvs = lvlsvs.lower()
+# print(lvlsvs)
+
+# percenttips = 0.1
+
+# if lvlsvs == "good":
+#     percenttips = 0.2
+# elif lvlsvs == "fair":
+#     percenttips = 0.15
+# elif lvlsvs == "bad":
+#     percenttips = 0.1
+
+
+
+# tips = float("%.2f" %(percenttips * bill))
+# total = bill + tips
+
+# output = f"Tip amount is ${tips} \nTotal amount is ${total}"
+
+# print(output)
+##########################
+
+#Tip Calculator 2
+
+
+bill = float(input("Total bill amount? "))
+lvlsvs = input("Level of Service? ")
+lvlsvs = lvlsvs.lower()
+n_ppl = int(input("Split how many ways? "
+))
+print(lvlsvs)
+
+percenttips = 0.1
+
+if lvlsvs == "good":
+    percenttips = 0.2
+elif lvlsvs == "fair":
+    percenttips = 0.15
+elif lvlsvs == "bad":
+    percenttips = 0.1
+
+
+
+tips = float("%.2f" %(percenttips * bill))
+total = bill + tips
+amount_per_person = float("%.2f" %(total / n_ppl))
+
+output = f"Tip amount is ${tips} \nTotal amount is ${total} \n Amount per person: ${amount_per_person}"
+
+print(output)
+##########################
+
+
+
+
+
+
+
+
+
 # #first 100 triangle number
 # count = 0
 # tn = 1 #tn is triangle number
@@ -44,19 +112,45 @@
 # print("Yes! You win!")
 
 
-#Guess a number v3
+# #Guess a number v3
 
-import random
-my_random_number = random.randint(1, 10)
+# import random
+# my_random_number = random.randint(1, 10)
 
-print("I am thinking of a number bewteen 1 and 10")
-setnumber = my_random_number
-gn = 0
-while gn != setnumber:
-    gn = int(input("What's the number?"))
-    if gn > setnumber:
-        print(gn, " is too hight")
-    if gn < setnumber:
-        print(gn, " is too low")
+# print("I am thinking of a number bewteen 1 and 10")
+# setnumber = my_random_number
+# gn = 0
+# while gn != setnumber:
+#     gn = int(input("What's the number?"))
+#     if gn > setnumber:
+#         print(gn, " is too hight")
+#     if gn < setnumber:
+#         print(gn, " is too low")
 
-print("Yes! You win!")
+# # print("Yes! You win!")
+
+# import random
+# my_random_number = random.randint(1, 10)
+
+# print("I am thinking of a number bewteen 1 and 10")
+# setnumber = my_random_number
+# gn = 0
+# attemps = 5
+# while attemps == 0:
+#     print (" you have ", attemps," guesse(s) left")
+
+#     while gn != setnumber:
+#         gn = int(input("What's the number?"))
+#         if gn > setnumber:
+#             print(gn, " is too hight")
+#         if gn < setnumber:
+#             print(gn, " is too low")
+
+#     attemps -=1
+    
+
+# print("Yes! You win!")
+# #NOT DONE
+
+
+

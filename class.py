@@ -1,26 +1,28 @@
-# # name = "Richard"
-# # lname = "Zhang"
+# name = "Richard"
+# lname = "Zhang"
 
-# # output = "good mornining {0} {1} {1}{1}{1}".format(name, name)
+# output = "good mornining {0} {1} {1}{1}{1}".format(name, name)
 
-# # # print(output)
-# # s1="john"
-# # s2="adfa"
-# # output = f'hello richard {s1} {s2}'
-# # print (isinstance(s1, str))
-# # import math
-
-# yourage = input("Enter your Age:   ")
-
-# numage = int(yourage)
-# dataType = type (numage)
-# output = f'you are {yourage} '
 # print(output)
-# print(dataType)
+# s1="john"
+# s2="adfa"
+# output = f'hello richard {s1} {s2}'
+# print(output)
+# print (isinstance(s1, str))
 
-# age = 26
-# if (age == 25) :
-#     print(age)
+import math
+
+yourage = input("Enter your Age:   ")
+
+numage = int(yourage)
+dataType = type (numage)
+output = f'you are {yourage} '
+print(output)
+print(dataType)
+
+age = 26
+if (age == 25) :
+    print("your age is " + age)
 
 # name = input("Enter in your name >>")
 # if (name == "Richard") :
@@ -64,8 +66,8 @@
 # print ("done")
 
 
-answer =""
-while answer != "when":
-    answer = input ('Say when: ')
-    answer = answer.lower()
-print("You got it!")
+# answer =""
+# while answer != "when":
+#     answer = input ('Say when: ')
+#     answer = answer.lower()
+# print("You got it!")
