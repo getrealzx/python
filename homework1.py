@@ -101,7 +101,7 @@
 # while x <=10:
 #     while y <=10:
 #         product = x*y
-#         output = f'{x} X {y} = {product} '
+#         output = f'{x} X {y} = {product}'
 #         y += 1
 #         print(output)
 #     y = 1
@@ -151,7 +151,7 @@
 # setnumber = 5
 # gn = 0
 # while gn != setnumber:
-#     gn = int(input("What's the number?"))
+#     gn = int(input("What's the number? "))
 #     if gn > setnumber:
 #         print(gn, " is too hight")
 #     if gn < setnumber:
@@ -159,6 +159,7 @@
 
 # print("Yes! You win!")
 
+######################################
 
 # #Guess a number v3
 
@@ -169,36 +170,41 @@
 # setnumber = my_random_number
 # gn = 0
 # while gn != setnumber:
-#     gn = int(input("What's the number?"))
+#     gn = int(input("What's the number? "))
 #     if gn > setnumber:
 #         print(gn, " is too hight")
 #     if gn < setnumber:
 #         print(gn, " is too low")
 
-# # print("Yes! You win!")
+# print("Yes! You win!")
+################################################
 
-# import random
-# my_random_number = random.randint(1, 10)
+#### Limited Guesses
+import random
+my_random_number = random.randint(1, 10)
 
-# print("I am thinking of a number bewteen 1 and 10")
-# setnumber = my_random_number
-# gn = 0
-# attemps = 5
-# while attemps == 0:
-#     print (" you have ", attemps," guesse(s) left")
-
-#     while gn != setnumber:
-#         gn = int(input("What's the number?"))
-#         if gn > setnumber:
-#             print(gn, " is too hight")
-#         if gn < setnumber:
-#             print(gn, " is too low")
-
-#     attemps -=1
+print("I am thinking of a number bewteen 1 and 10")
+setnumber = my_random_number
+gn = 0
+attemps = 5
     
 
-# print("Yes! You win!")
-# #NOT DONE
+while gn != setnumber and attemps > 0:
+    print (" you have ", attemps," guesse(s) left")
+    gn = int(input("What's the number? "))
+    if gn > setnumber:
+        print(gn, " is too hight")
+    if gn < setnumber:
+        print(gn, " is too low")
 
+    attemps -=1
+
+
+if attemps < 1:
+    print("You ran out of guesses!")
+else:  
+    print("Yes! You win!")
+
+##################################################
 
 
