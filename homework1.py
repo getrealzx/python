@@ -23,26 +23,35 @@
 # output = f"{name}'s favorite subject in school is {subject}.'"
 # print(output)
 
-# #######################################################
+# # #######################################################
 
-# 4. Day of the week
-day = int(input('Day (0-6)? '))
-if day == 0:
-    print("Monday")
-if day == 1:
-    print("Tuesday")
-if day == 2:
-    print("Wednseday")
-if day == 3:
-    print("Thursday")
-if day == 4:
-    print("Friday")
-if day == 6:
-    print("Saturday")
-if day == 7:
-    print("Sunday")
+# # 4. Day of the week
+# day = int(input('Day (0-6)? '))
+# if day == 0:
+#     print("Monday")
+# if day == 1:
+#     print("Tuesday")
+# if day == 2:
+#     print("Wednseday")
+# if day == 3:
+#     print("Thursday")
+# if day == 4:
+#     print("Friday")
+# if day == 6:
+#     print("Saturday")
+# if day == 7:
+#     print("Sunday")
 
-# #######################################################
+# # #######################################################
+#5. Work or Sleep in
+# day = int(input('Day (0-6)? '))
+# if day >=5:
+#     print("Sleep in")
+# else:
+#     print("Go to Work")
+
+# # #######################################################
+
 
 # #1. Tip Calculator
 
@@ -67,14 +76,13 @@ if day == 7:
 # print(output)
 ##########################
 
-# #Tip Calculator 2
+#Tip Calculator 2
 
 
 # bill = float(input("Total bill amount? "))
 # lvlsvs = input("Level of Service? ")
 # lvlsvs = lvlsvs.lower()
-# n_ppl = int(input("Split how many ways? "
-# ))
+# n_ppl = int(input("Split how many ways? "))
 
 # percenttips = 0.1
 
@@ -89,19 +97,18 @@ if day == 7:
 # total = bill + tips
 # amount_per_person = float("%.2f" %(total / n_ppl))
 
-# output = f"Tip amount is ${tips} \nTotal amount is ${total} \n Amount per person: ${amount_per_person}"
+# output = f"Tip amount is ${tips} \nTotal amount is ${total} \nAmount per person: ${amount_per_person}"
 
 # print(output)
 ##########################
 
-# #3. How many coins?
+#3. How many coins?
 
 # answer = "yes"
 # numcoin = 0
 
 # while answer == "yes":
-#     output = f"You have {numcoin} coins"
-#     print(output)
+#     print(f"You have {numcoin} coins")
 #     answer = input("Do you want another? ")
 #     answer = answer.lower()
 #     if answer == "yes" :
@@ -113,25 +120,25 @@ if day == 7:
 # #################################
 
 
-# # 4. Print a Box
-# width = int(input("Width? "))
-# height = int(input("Height? "))
-# w = 1
-# h = 1
+# 4. Print a Box
+width = int(input("Width? "))
+height = int(input("Height? "))
+w = 1
+h = 1
 
-# while h <= height:
-#     if h == 1 or h == height:
-#         print("*"*width)
-#     else:
-#         print("*" + " "*(width-2) + "*")
-#     h += 1
+while h <= height:
+    if h == 1 or h == height:
+        print("*"*width)
+    else:
+        print("*" + " "*(width-2) + "*")
+    h += 1
 
 # ##########################################
 
 # #5. Print a Triangle
 
 # lvl = 1
-# fspacer = 4
+# fspacer = 20
 
 # while fspacer >0:
 #     print(" "*fspacer + "*"*lvl)
@@ -206,7 +213,7 @@ if day == 7:
 
 ######################################
 
-# #Guess a number v3
+#Guess a number v3
 
 # import random
 # my_random_number = random.randint(1, 10)
