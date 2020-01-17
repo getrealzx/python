@@ -11,7 +11,7 @@
 # print(f'{L1} X {L2}  = {P}')
 ####################################
 
-# ## 2. Matrix Addition
+## 2. Matrix Addition
 # x = [[1,3],[2,4]]
 
 # y = [[5,2],[1,0]]
@@ -21,6 +21,9 @@
 # for i in range(len(x)):
 #     for i2 in range(len(y)):
 #         s[i][i2] = x[i][i2] + y [i][i2]
+# for r in s:
+#     print(r)
+
 # print(s)
 # ####################################
 # 
@@ -41,10 +44,15 @@
 # for i in range(outlen):
 #     for n in range(inlen):
 #         s[i][n] = x[i][n] + y[i][n]
+# for r in s:
+#     print(r)
 
-# print(s)
 
 ##########################################
+
+# list = [1,2,4,1,1,0]
+# for i in list: 
+#     print(i) 
 
 # #3.De-dup
 # l = [1,3,3,9,3]
@@ -90,17 +98,18 @@
 
 # ##########################################
 
-# # 6. Long-long Vowels
-# word = input("Please type a word to convert vowel to t if it is a long vowel  ")
+# 6. Long-long Vowels
+word = input("Please type a word to convert vowel to t if it is a long vowel  ")
 
-# L = list(word)
+L = list(word)
 
-# for i in range(1,len(L)):
-#     if L[i]==L[i-1]:
-#         L[i] *= 3
+for i in range(1,len(L)):
+    if (L[i]==L[i-1] and (L[i]=="a" or L[i]=="e" or L[i]=="i" or L[i]=="o" or L[i]=="u")):
+        L[i] *= 3
 
-# word = "".join(L)
-# print(word)
+word = "".join(L)
+print(word)
+
 
 # ##########################################
 # 7. Caesar Cipher

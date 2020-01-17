@@ -1,73 +1,92 @@
-# name = "Richard"
-# lname = "Zhang"
 
-# output = "good mornining {0} {1} {1}{1}{1}".format(name, name)
+####################################
+###functions
+# def greeting(n):
+#     if n==1:
+#         print("hello world")
+#     if n>1:
+#         print("hello 2 worlds")
 
-# print(output)
-# s1="john"
-# s2="adfa"
-# output = f'hello richard {s1} {s2}'
-# print(output)
-# print (isinstance(s1, str))
-
-import math
-
-yourage = input("Enter your Age:   ")
-
-numage = int(yourage)
-dataType = type (numage)
-output = f'you are {yourage} '
-print(output)
-print(dataType)
-
-age = 26
-if (age == 25) :
-    print("your age is " + age)
-
-# name = input("Enter in your name >>")
-# if (name == "Richard") :
-#     print(name)
-
-# Aage = input("What is your Age?")
-# age = int(Aage)
-# if age >= 21:
-#   print("You get free beer")
-# elif age < 18:
-#   print("What are you even doing here?")
-# else:
-#   print("Sorry no beer for you")
-
-
-# greeting = "Hello {}, it is very nice to meet you and your friend {}!"
-# salute = "{}, you are the hero, you don't have any friends alive!"
-# name_of_user = input("What is your name? ")
-
-# length_of_name = len(name_of_user)
-
-# if name_of_user == "Richard":
-#     print(salute.format(name_of_user))
-
-# elif length_of_name > 0:
-#     name_of_friend = input("What is your friend's name? ")
+# greeting(1)
     
-#     print(greeting.format(name_of_user,name_of_friend))
+
+# def printnames():
+#     print("Shu")
+#     print("Thomas")
+#     print("Gustavo")
+#     print("Alim")
+
+# print("Day 1: Students in SRE class")
+# print("lecture: git 101")
+# printnames()
+# print("Day 2: Students in SRE class")
+# print("lecture: git 102")
+# printnames()
+# print("Day 3: Students in SRE class")
+# print("lecture: python 101")
+# printnames()
+
+# def myfunc():
+#     for i in range (10):
+#         print(i)
 
 
-# else:
-#     print("OK, I'll ask again some other time.")
+# myfunc()
+
+# def greeting(person):
+#     print(f'hello {person}')
+
+# greeting("100.00/2")
+# greeting(99/5)
+# greeting([1,2])
 
 
+# def add(n1, n2):
+#     s=n1+n2
+#     print(s)
+#     return s
 
-# count = 0
-# while count < 10:
-#     print ('the count is', count)
-#     count += 1
-#     print ('the count after is', count)
-# print ("done")
+# add(4, 5)
+# S = add(4, 5)
+# print(S)
+
+# def cal_avg():
+#     sum=0
+#     l=[]
+#     # l=[1, 3, 10, 10, 5]
+#     n = int(input("Enter Numbers of Element"))
+#     for i in range(n):
+#         ele = int(input())
+#         l.append(ele)
+
+#     for i in range(len(l)):
+#         sum = sum + l[i]
+
+#     avg = sum/len(l)
+#     print(avg)
+
+#     return avg
 
 
-# answer =""
-# while answer != "when":
-#     answer = input ('Say when: ')
-#     answer = answer.lower()
-# print("You got it!")
+# cal_avg()
+
+
+# def myFunc (n1, n2, n3):
+
+#     return n1*2, n2*3, n3*4
+
+# # result = myFunc(4, 7, 9)
+
+# c1, c2, c3 = myFunc(4, 7, 9)
+
+# # print(type(result))
+
+# print(c1)
+# print(c2)
+# print(c3)
+
+def dance():
+    kind = "silly"
+    print("I am doing a %s dance" % kind)
+    print(kind)
+dance()
