@@ -107,3 +107,54 @@
 
 # longest()
 #############################################
+
+# # Large
+# # 1. Tic-tac-toe
+
+# def move(board, location, player):
+
+#############################################
+# 2. Change maker
+
+def make_change():
+    total_charge = float(input("What is the total charge? $"))
+    payment = float(input("What is the payment? $"))
+    change = payment - total_charge
+    print(f'The total change is ${change}')
+
+
+    change_int= round(change/1)
+    change_cent=round(change%1*100)
+
+    B =(100,50,20,10,5,1)
+    C =(25,10,5,1)
+    NB = []
+    NC =[]
+
+    for b in B:
+        if b <= change:
+            NB.append(int(change/b))
+            change=change%b
+        elif b > change:
+            NB.append(0)
+    # print(NB)
+    
+
+
+    for c in C:
+        if c <= change_cent:
+            NC.append(int(change_cent/c))
+            change_cent=round(change_cent%c)
+        elif c > change_cent:
+            NC.append(0)
+    # print(NC)
+
+
+    t = (tuple(NB),tuple(NC))
+    print(t)
+    return(t)
+    # return(Tu_Change)
+
+make_change()
+
+
