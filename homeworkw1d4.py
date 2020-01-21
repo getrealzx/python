@@ -144,7 +144,7 @@ def make_change():
     for c in C:
         if c <= change_cent:
             NC.append(int(change_cent/c))
-            change_cent=round(change_cent%c)
+            change_cent=round(change_cent%c) 
         elif c > change_cent:
             NC.append(0)
     # print(NC)
