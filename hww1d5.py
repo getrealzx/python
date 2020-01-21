@@ -138,10 +138,8 @@
 
 
 LC = {}
-
 word = input('Please enter a word to count top 3 letters: ')
 # word='hellllooooooohahahhhhh'
-
 
 for l in word:
     if l in LC:
@@ -149,24 +147,25 @@ for l in word:
     else:
         LC[l] = 1
 
-
 top_list=[["",0],["",0],["",0]]
 
 for k, v in LC.items():
 
-    if v >= top_list[0][1]:
+    if v > top_list[0][1]:
+        top_list[2][0]=top_list[1][0]
+        top_list[2][1]=top_list[1][1]
         top_list[1][0]=top_list[0][0]
         top_list[1][1]=top_list[0][1]
         top_list[0][0]=k
         top_list[0][1]=v
         
-    elif v >= top_list[1][1]:
+    elif v > top_list[1][1]:
         top_list[2][0]=top_list[1][0]
         top_list[2][1]=top_list[1][1]
         top_list[1][0]=k
         top_list[1][1]=v
         
-    elif v >= top_list[2][1]:
+    elif v > top_list[2][1]:
         top_list[2][0]=k
         top_list[2][1]=v
         
