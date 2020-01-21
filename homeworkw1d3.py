@@ -54,7 +54,8 @@
 # for i in list: 
 #     print(i) 
 
-# #3.De-dup
+#
+#  #3.De-dup
 # l = [1,3,3,9,3]
 # nl = []
 
@@ -99,16 +100,16 @@
 # ##########################################
 
 # 6. Long-long Vowels
-word = input("Please type a word to convert vowel to t if it is a long vowel  ")
+# word = input("Please type a word to convert vowel to t if it is a long vowel  ")
 
-L = list(word)
+# L = list(word)
 
-for i in range(1,len(L)):
-    if (L[i]==L[i-1] and (L[i]=="a" or L[i]=="e" or L[i]=="i" or L[i]=="o" or L[i]=="u")):
-        L[i] *= 3
+# for i in range(1,len(L)):
+#     if (L[i]==L[i-1] and (L[i]=="a" or L[i]=="e" or L[i]=="i" or L[i]=="o" or L[i]=="u")):
+#         L[i] *= 3
 
-word = "".join(L)
-print(word)
+# word = "".join(L)
+# print(word)
 
 
 # ##########################################
