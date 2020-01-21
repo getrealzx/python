@@ -78,8 +78,6 @@
 ####################################
 # #2. Word Summary
 
-
-
 # def word_histogram():
 #     w_count = {}
 #     w_c = 0
@@ -98,12 +96,10 @@
 #     if word !="":
 #             word_list.append(word)
 
-
 #     for w in word_list:
 #         if w in w_count:
 #             w_count[w] = w_count[w] + 1
 #             print(w)
-            
 
 #         else:
 #             w_count[w] = 1
@@ -118,10 +114,11 @@
     
 ##3. Sorting a histogram
 
-# import operator
+
 # LC = {}
 
 # word=input("Please enter a word: ")
+# # word='hellllooooooo'
 
 # for l in word:
 #     if l in LC:
@@ -129,10 +126,52 @@
 #     else:
 #         LC[l] = 1
 
+# print(LC)
+
+# print(LC.items())
+
+## method 1
+# import operator
 # sorted_w = sorted(LC.items(), key=operator.itemgetter(1), reverse=True)[:3]
 
-# print(sorted_w)
+## ########## method 2
 
+
+LC = {}
+
+word = input('Please enter a word to count top 3 letters: ')
+# word='hellllooooooohahahhhhh'
+
+
+for l in word:
+    if l in LC:
+        LC[l] = LC[l]+1
+    else:
+        LC[l] = 1
+
+
+top_list=[["",0],["",0],["",0]]
+
+for k, v in LC.items():
+
+    if v >= top_list[0][1]:
+        top_list[1][0]=top_list[0][0]
+        top_list[1][1]=top_list[0][1]
+        top_list[0][0]=k
+        top_list[0][1]=v
+        
+    elif v >= top_list[1][1]:
+        top_list[2][0]=top_list[1][0]
+        top_list[2][1]=top_list[1][1]
+        top_list[1][0]=k
+        top_list[1][1]=v
+        
+    elif v >= top_list[2][1]:
+        top_list[2][0]=k
+        top_list[2][1]=v
+        
+
+print(top_list)
 
 
 
@@ -187,7 +226,3 @@
 # phone_book_app()
 # with open('data.pickle', 'wb') as fh:
 #     pickle.dump(phonebook, fh)
-
-
-
-
