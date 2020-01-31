@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .cont{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    div{
+        display: inline-block;
+        height: 120px;
+        w:120px;
+        line-height: 100%;
+        align-content: center;
+        padding 30px;
+    }
+
+    #triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    transform:rotate(90deg);
+    }
+
+    #square{
+
+
+        width:0px;
+        height: 0px;
+        border: 50px solid black;
+
+    }
+
+    #oval{
+        width:0px;
+        height: 0px;
+        border: 30px solid orange;
+        border-radius: 15px 50px 15px 50px;
+
+
+    }
+
+    #circle{
+
+        width:0px;
+        height: 0px;
+        border: 30px solid rgb(29, 28, 28);
+        border-radius: 30px;
+
+    }
+
+    #triangle-down{
+
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid blue;
+
+    }
+
+    #triangle-left{
+      width: 0;
+      height: 0;
+      border-top: 85px solid transparent;
+      border-right: 100px solid rgb(11, 10, 16);
+      border-bottom: 85px solid transparent;
+    }
+
+
+
+    #trapezoid{
+    border-left: 50px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50px;
+    border-bottom: 100px solid rgb(16, 201, 56);
+
+    }
+
+    #sixpoint-star{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid red;
+    position: relative;
+    top:-120px;
+    left:40px;
+
+
+    }
+
+    #sixpoint-star:after{
+    content:"";
+
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 80px solid red;
+    position: relative;
+    top:110px;
+    left: -50px;
+
+    }
+
+    #sqdiamond{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 45px solid red;
+    position: relative;
+    top:-120px;
+    left:40px;
+        
+    }
+    
+
+    #sqdiamond::after{
+    content:"";
+
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 45px solid brown;
+    position: relative;
+    top:90px;
+    left: -50px;
+
+    }
+
+    #pacman{
+
+
+    width:0px;
+    height: 0px;
+    border: 75px solid yellow;
+    border-radius: 80px;
+
+    } 
+
+    #pacman::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 80px solid transparent;
+    border-right: 80px solid rgb(255, 255, 255);
+    border-bottom: 80px solid transparent;
+    position: relative;
+    left:20px;
+    top:-10px;
+
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="triangle-up"></div>
+    <div id="square"></div>
+    <div id="oval"></div>
+    <div id="circle"></div>
+    <div id="triangle-down"></div>
+    <div id="triangle-left"></div>
+    <div id="trapezoid"></div>
+    <div id="sixpoint-star"></div>
+    <div id="sqdiamond"></div>
+    <div id="pacman"></div>
+
+</body>
+</html>
